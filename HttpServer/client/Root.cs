@@ -5,6 +5,8 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using HttpServer.client.components;
+using HttpServer.lib;
 
 namespace HttpServer.client
 {

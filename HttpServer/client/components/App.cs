@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HttpServer.lib;
 
-namespace HttpServer
+namespace HttpServer.client.components
 {
     class App : Component
     {

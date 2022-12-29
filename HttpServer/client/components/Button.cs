@@ -1,12 +1,15 @@
-﻿namespace HttpServer;
+﻿using HttpServer.lib;
+
+namespace HttpServer.client.components;
 
 public class Button : Component
 {
-    private int count = 0;
+    private Reactive<int> count = new (0);
     public override string Render()
     {
         return $"""
-                <button onclick="{Window.Alert(count++)}">Click me</button> 
+                <div> current count: {count.Value}</div>
+                <button onclick="{Window.Alert(count.Value++)}">Click me</button> 
                 """;
     }
 

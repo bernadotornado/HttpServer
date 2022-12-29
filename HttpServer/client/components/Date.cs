@@ -1,6 +1,7 @@
 ﻿using System;
+using HttpServer.lib;
 
-namespace HttpServer;
+namespace HttpServer.client.components;
 
 public class Date : Component
 {
