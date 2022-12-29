@@ -1,6 +1,6 @@
 # Server-Side Rendered C# Web Framework (JSXCore) 🌐
 
-This is a lightweight, high-performance C# web framework that uses server-side string literal rendering to deliver static web applications.
+This is a lightweight, high-performance, component based C# web framework that uses server-side string literal rendering to deliver static web applications.
 
 ## Features 🎉
 
