@@ -27,4 +27,4 @@ We welcome contributions to the project! If you have an idea for a new feature o
 
 ## License 📜
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/bernadotornado/HttpServer/blob/main/LICENSE.md) file for details.
