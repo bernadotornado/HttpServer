@@ -5,6 +5,7 @@ This is a lightweight, high-performance C# web framework that uses server-side s
 ## Features 🎉
 
 - Uses C# 11 string literals as jsx-esque components.
+- JavaScript classes ported to C# for intellisense and type safety.
 - Nothing really, this is mainly a joke.
 
 ## Getting Started 🚀
