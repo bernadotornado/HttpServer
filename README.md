@@ -1,10 +1,12 @@
-# Server-Side Rendered C# Web Framework 🌐
+# Server-Side Rendered C# Web Framework (JSXCore) 🌐
 
-This is a lightweight, high-performance C# web framework that uses server-side string literal rendering to deliver static web applications.
+This is a lightweight, high-performance, component based C# web framework that uses server-side string literal rendering to deliver static web applications.
 
 ## Features 🎉
 
-- Uses C# 11 string literals as jsx-esque components
+- Uses C# 11 string literals as jsx-esque components.
+- JavaScript classes ported to C# for intellisense and type safety.
+- Nothing really, this is mainly a joke.
 
 ## Getting Started 🚀
 
@@ -25,4 +27,4 @@ We welcome contributions to the project! If you have an idea for a new feature o
 
 ## License 📜
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/bernadotornado/HttpServer/blob/main/LICENSE.md) file for details.
