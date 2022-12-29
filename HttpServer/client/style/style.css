@@ -1,0 +1,9 @@
+table, th, td {
+	border: 1px solid black
+}
+html{
+	width: 50%;
+}
+*{
+	font-family: sans-serif;
+}
