@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Net;
-using System.Collections.Generic;
+using JSXCore.client;
 
-using HttpServer.client;
-
-namespace HttpServer
+namespace JSXCore.server
 {
     class Server
     {

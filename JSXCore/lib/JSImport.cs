@@ -1,16 +1,20 @@
 ﻿using System.IO;
-using HttpServer.lib;
 
-namespace HttpServer.client.components;
+namespace JSXCore.lib;
 
 public class JSImport: Component
 {
-    public override string Render()
-    {
-        return $"""
-                <script lang="javascript">
-                    {File.ReadAllText(Config.ClientDirectory+"/assets/scripts/button.js")}
-                </script>
-                """ ;
-    }
+    private string path = null;
+    public JSImport(string path = null) => this.path = path;
+        
+    public override string Render()  =>
+        $"""
+         <script lang="javascript">
+             { (path != null ? 
+                 File.ReadAllText(path) :
+                 jsCache)}
+         </script>
+         """ ;
+        
+    
 }

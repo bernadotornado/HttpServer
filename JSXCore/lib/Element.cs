@@ -1,13 +1,12 @@
-﻿using System;
-
-namespace HttpServer.lib;
+﻿namespace JSXCore.lib;
 
 public class Element
 {
-    public string html;
+    public string id;
 
-    void InnerHTML()
-    { 
-        throw new NotImplementedException();
+    public Element(string id)
+    {
+        this.id = id;
     }
+    public string InnerHTML() => $"document.getElementById('{id}').innerHTML";
 }

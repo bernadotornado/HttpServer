@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 
-namespace HttpServer.lib
+namespace JSXCore.lib
 {
     public class Component
     {
+        
+        public static string jsCache = "";
         private BigInteger id;
         private static List<Component> componentTree = new ();
-        public virtual string Render()
-        {
-            return "";
-        }
+        public virtual string Render()=>  "";
         public override string ToString()
         {
             Random r = new Random();

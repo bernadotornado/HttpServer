@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using HttpServer.lib;
+using JSXCore.lib;
 
 namespace HttpServer.client.components;
 

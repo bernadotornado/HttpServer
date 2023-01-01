@@ -1,10 +1,7 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
-using System.Net;
-using HttpServer.client;
 
-namespace HttpServer.lib;
+namespace JSXCore.lib;
 
 public class Image
 {

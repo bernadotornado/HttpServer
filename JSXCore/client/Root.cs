@@ -1,8 +1,9 @@
 ﻿using System.IO;
-using HttpServer.client.components;
-using HttpServer.lib;
+using JSXCore.client.components;
+using JSXCore.lib;
+using JSXCore.server;
 
-namespace HttpServer.client;
+namespace JSXCore.client;
 
 public class Root: Component
 {
@@ -19,8 +20,9 @@ public class Root: Component
                 <!DOCTYPE html>
                 <html lang="en">
                     <head>
-                        <title>Landing Page</title>
-                        <link rel="icon" type="image/x-icon" href="{new Image(Image.ImageFormat.FAVICON, Config.ClientDirectory+"assets/favicon/favicon.ico")}">
+                        <title>JSXCore Hello, world!</title>
+                        <link rel="icon" type="image/x-icon" 
+                        href="{new Image(Image.ImageFormat.FAVICON, Config.ClientDirectory+"assets/favicon/favicon.ico")}">
                         {(Config.UseCustomCss ? 
                             $"<style>{customStyle}</style>" : tailwind)}
                     </head> 

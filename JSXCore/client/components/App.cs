@@ -1,6 +1,7 @@
-﻿using HttpServer.lib;
+﻿using HttpServer.client.components;
+using JSXCore.lib;
 
-namespace HttpServer.client.components
+namespace JSXCore.client.components
 {
     class App : Component
     {

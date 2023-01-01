@@ -1,5 +1,5 @@
 ﻿using System;
-using HttpServer.lib;
+using JSXCore.lib;
 
 namespace HttpServer.client.components;
 

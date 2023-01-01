@@ -1,4 +1,4 @@
-﻿namespace HttpServer;
+﻿namespace JSXCore.server;
 
 public class Config
 {

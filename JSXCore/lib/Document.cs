@@ -1,12 +1,9 @@
-﻿using System;
-
-namespace HttpServer.lib;
+﻿namespace JSXCore.lib;
 
 public static class Document
 {
     public static Element GetElementById(string id)
     {
-        throw new NotImplementedException();
-        return null;
+        return new Element(id);
     }
 }

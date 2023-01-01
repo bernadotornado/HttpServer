@@ -1,4 +1,4 @@
-﻿namespace HttpServer.lib
+﻿namespace JSXCore.lib
 {
     static class Window
     {
