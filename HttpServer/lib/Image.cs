@@ -8,6 +8,7 @@ namespace HttpServer.lib;
 
 public class Image
 {
+    private ImageFormat _format;
     public enum ImageFormat
     {
         JPEG,
@@ -15,7 +16,7 @@ public class Image
         SVG,
         FAVICON
     }
-    private string path;
+    private string _path;
     private string dataHeader = "";
     public Image(ImageFormat format,  string path)
     {
@@ -23,17 +24,14 @@ public class Image
         {
             case ImageFormat.JPEG: dataHeader += "data:image/jpeg;base64,"; break;
             case ImageFormat.PNG: dataHeader += "data:image/png;base64,"; break;
-            case ImageFormat.SVG: dataHeader += "data:image/svg;base64,"; break;
             case ImageFormat.FAVICON: dataHeader += "data:image/x-icon;base64,"; break;
         }
-        this.path = path;
+        this._path = path;
+        this._format = format;
     }
-
-    
 
     public override string ToString()
-    {
-        return dataHeader + 
-               Convert.ToBase64String(File.ReadAllBytes(path));
-    }
+    => _format == ImageFormat.SVG? 
+        File.ReadAllText(_path) :
+        dataHeader + Convert.ToBase64String(File.ReadAllBytes(_path));
 }

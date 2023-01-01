@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 
 namespace HttpServer.lib
 {
     public class Component
     {
-        private int id;
+        private BigInteger id;
         private static List<Component> componentTree = new ();
         public virtual string Render()
         {

@@ -7,12 +7,13 @@ namespace HttpServer.client.components
         public override string Render()
         {
             return $""" 
-                    <h1> Hello, world! </h1> 
-                    <p> This is a test of the new blazingly fast framework. </p>
+                    {new Logo()}
+                    <h1 class="text-slate-900 text-4xl tracking-tight font-bold sm:text-5xl dark:text-white flex items-center justify-center mb-5">Hello, world!</h1>
+                    <h2 class="text-4xl font-bold text-white-800 mb-4 flex items-center justify-center">This is a test of the new blazingly fast framework.</h2>
                     {new Date()}  
                     {new Button()}
-                    {new TailwindTest()}
-                    {new ImageTest()}
+                    {new Table()}
+                    {new Footer()}
                     """;
         }
     }

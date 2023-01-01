@@ -2,3 +2,4 @@
 .vs/
 HttpServer/bin/
 HttpServer/obj/
+HttpServer/tmp/
