@@ -6,6 +6,8 @@ This is a lightweight, high-performance, component based C# web framework that u
 
 - Uses C# 11 string literals as jsx-esque components.
 - JavaScript classes ported to C# for intellisense and type safety.
+- Tailwind CSS support.
+- Images as base64 string.
 - Nothing really, this is mainly a joke.
 
 ## Getting Started 🚀
@@ -14,8 +16,8 @@ To get started with the framework, follow these steps:
 
 1. Install the latest version of .NET from the [official website](https://dotnet.microsoft.com/download).
 2. Clone this repository to your local machine using `git clone https://github.com/bernadotornado/HttpServer.git`.
-3. Navigate to the root directory of the repository and run `dotnet restore` to install the necessary dependencies.
-4. Run the web application using `dotnet run`.
+3. Open `.sln` file.
+4. Run.
 
 ## Documentation 📚
 
