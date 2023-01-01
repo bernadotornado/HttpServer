@@ -7,6 +7,7 @@ JSXCore is a lightweight, high-performance, component-based C# web framework tha
 - Uses C# 11 string literals as jsx-esque components.
 - JavaScript classes ported to C# for intellisense and type safety.
 - Single UTF-8 string build with external content baked to base64 strings.
+- Reactive server-side variables.
 - Tailwind CSS support.
 - Nothing really, this is mainly a joke.
 
