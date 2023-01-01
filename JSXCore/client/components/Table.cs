@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using JSXCore.lib;
 
-namespace HttpServer.client.components;
+namespace JSXCore.client.components;
 
 public class Table : Component
 {
