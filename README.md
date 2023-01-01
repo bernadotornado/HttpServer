@@ -1,4 +1,4 @@
-#🌐JSXCore 
+# 🌐JSXCore 
 
 This is a lightweight, high-performance, component based C# web framework that uses server-side string literal rendering to deliver static web applications.
 
