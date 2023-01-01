@@ -12,23 +12,13 @@ namespace HttpServer.client
 {
     public class Root: Component
     {
-        private string style = "";
+        private string customStyle = File.ReadAllText(Root.ClientDirectory+"style/style.css");
 
         private string tailwind = """ 
                             <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
                             """;
-        void GetStyle()
-        {
-            var stylesheet = File.ReadAllLines(@"../../../client/style/style.css");
-            foreach (var line in stylesheet)
-                style += line;
-            
-        }
 
-        public Root()
-        {
-            GetStyle();
-        }
+        public static readonly string ClientDirectory = "../../../client/";
         
         public override string Render()
         {
@@ -37,9 +27,9 @@ namespace HttpServer.client
                     <html ""lang = en"">
                         <head>
                             <title>Landing Page</title>
-                            {(Config.customcss ? 
-                                $"<style>{style}</style>" : tailwind)}
-                            
+                            <link rel="icon" type="image/x-icon" href="{new Image(Image.ImageFormat.FAVICON, Root.ClientDirectory+"assets/favicon/favicon.ico")}">
+                            {(Config.UseCustomCss ? 
+                                $"<style>{customStyle}</style>" : tailwind)}
                         </head> 
                         <body>
                             {new App()}

@@ -12,7 +12,7 @@ namespace HttpServer
         static void Main(string[] args)
         {
             HttpListener listener = new HttpListener();
-            listener.Prefixes.Add("http://localhost:8081/");
+            listener.Prefixes.Add(Config.HtmlURL);
             listener.Start();
             Console.WriteLine("Listening for requests...");
             
@@ -20,6 +20,7 @@ namespace HttpServer
             {
                 // Wait for a request
                 HttpListenerContext context = listener.GetContext();
+                Console.WriteLine(context.Request.Headers);
 
                 // Obtain a response object
                 HttpListenerResponse response = context.Response;

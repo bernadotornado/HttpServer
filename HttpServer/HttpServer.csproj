@@ -11,6 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="client\assets\favicon" />
+    <Folder Include="client\assets\images" />
     <Folder Include="client\style\" />
   </ItemGroup>
 

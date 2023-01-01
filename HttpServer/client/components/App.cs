@@ -11,6 +11,8 @@ namespace HttpServer.client.components
                     <p> This is a test of the new blazingly fast framework. </p>
                     {new Date()}  
                     {new Button()}
+                    {new TailwindTest()}
+                    {new ImageTest()}
                     """;
         }
     }

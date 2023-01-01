@@ -2,5 +2,7 @@
 
 public class Config
 {
-    public static bool customcss = true;
+    public static string HtmlURL = "http://localhost:8081/";
+    public static string FaviconURL = "http://localhost:8082/";
+    public static bool UseCustomCss = false;
 }
