@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32901.82
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpServer", "HttpServer\HttpServer.csproj", "{FE7F0ED2-3EDB-46DE-B93B-52BF38CEE1A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSXCore", "JSXCore\JSXCore.csproj", "{FE7F0ED2-3EDB-46DE-B93B-52BF38CEE1A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

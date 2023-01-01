@@ -1,5 +1,5 @@
 .idea/
 .vs/
-HttpServer/bin/
-HttpServer/obj/
-HttpServer/tmp/
+JSXCore/bin/
+JSXCore/obj/
+JSXCore/tmp/
