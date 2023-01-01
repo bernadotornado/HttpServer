@@ -16,7 +16,7 @@ To get started with the framework, follow these steps:
 
 1. Install the latest version of .NET from the [official website](https://dotnet.microsoft.com/download).
 2. Clone this repository to your local machine using `git clone https://github.com/bernadotornado/HttpServer.git`.
-3. Open .sln file.
+3. Open `.sln` file.
 4. Run.
 
 ## Documentation 📚
