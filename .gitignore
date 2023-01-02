@@ -1,9 +1,12 @@
 .idea/
 .vs/
+app/bin/
+app/obj/
+app/tmp/
+app/.idea/
+app/.vs/
 JSXCore/bin/
 JSXCore/obj/
 JSXCore/tmp/
-JSXCoreFramework/bin/
-JSXCoreFramework/obj/
-JSXCoreFramework/tmp/
+
     
