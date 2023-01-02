@@ -8,17 +8,26 @@ JSXCore is a lightweight, high-performance, component-based C# web framework tha
 - JavaScript classes ported to C# for intellisense and type safety.
 - Single UTF-8 string build with external content baked to base64 strings.
 - Reactive server-side variables.
-- Tailwind CSS support.
-- Nothing really, this is mainly a joke.
+- Tailwind CSS support with optional custom styling.
+- Nothing more really, this is started as a joke, but it's starting to get serious.
 
 ## Getting Started 🚀
 
-To get started with the framework, follow these steps:
+#### To get started with the framework, follow these steps:
 
 1. Install the latest version of .NET from the [official website](https://dotnet.microsoft.com/download).
-2. Clone this repository to your local machine using `git clone https://github.com/bernadotornado/HttpServer.git`.
-3. Open `.sln` file.
-4. Run.
+2. Clone this repository to your local machine using `$ git clone https://github.com/bernadotornado/JSXCore.git`.
+3. Rename folder to your apps name.
+4. Move to app folder with `$ cd <YOUR_APPS_NAME>/app`.
+5. Run with `$ dotnet run`.
+
+#### Source Control
+You may want you use your own version control after the initial cloning. For this delete the `.git` folder at the root of the project. Then create a new one with: 
+```
+$ git init
+$ git add .
+$ git commit -m "initial commit"
+```
 
 ## Documentation 📚
 
