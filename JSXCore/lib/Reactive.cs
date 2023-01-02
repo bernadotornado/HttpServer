@@ -1,25 +1,19 @@
-﻿using System.Collections.Generic;
-using System.Numerics;
+﻿using System.Numerics;
 
 namespace JSXCore;
 
 public class Reactive<T>
 {
-    private BigInteger _id;
-    private static List<Reactive<T>> _reactiveVariables = new();
-    public T Value { get; set; }
-
-    private string _jsName;
+    private readonly BigInteger _id;
+    private static readonly List<Reactive<T>> ReactiveVariables = new();
+    private readonly string _jsName;
     public override string ToString() => _jsName;
+
     public Reactive(T value)
     {
-        Value = value;
-        _id = _reactiveVariables.Count;
-        _reactiveVariables.Add(this);
+        _id = ReactiveVariables.Count;
+        ReactiveVariables.Add(this);
         _jsName = $"_reactive{_id}";
         Component.JsCache += $"let {_jsName} = {value};";
     }
-
-    
-    
 }

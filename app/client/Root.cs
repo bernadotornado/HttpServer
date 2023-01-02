@@ -1,14 +1,13 @@
 ﻿using System.IO;
-using app.client.components;
-using app.server;
 using JSXCore;
+using app.client.components;
 
 namespace app.client;
 
 public class Root: Component
 {
-    private string _customStyle = File.ReadAllText(Config.ClientDirectory + "assets/style/style.css");
-    private string _tailwind = 
+    private readonly string _customStyle = File.ReadAllText(Config.ClientDirectory + "assets/style/style.css");
+    private readonly string _tailwind = 
         """ 
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         """;
@@ -17,9 +16,9 @@ public class Root: Component
         <!DOCTYPE html>
         <html lang="en">
             <head>
-                <title>JSXCore Hello, world!</title>
+                <title>{Config.AppName}</title>
                 <link rel="icon" type="image/x-icon" 
-                href="{new Image(ImageFormat.FAVICON, Config.ClientDirectory+"assets/images/favicon/favicon.ico")}">
+                href="{new Image(ImageFormat.Favicon, Config.ClientDirectory+"assets/images/favicon/favicon.ico")}">
                 {(Config.UseCustomCss ? 
                     $"<style>{_customStyle}</style>" : _tailwind)}
             </head> 
@@ -29,7 +28,5 @@ public class Root: Component
             </body>
         </html>
         """;
-    
-
 }
 

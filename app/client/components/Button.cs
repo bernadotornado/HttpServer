@@ -4,12 +4,12 @@ namespace app.client.components;
 
 public class Button : Component
 {
-    private Reactive<int> count = new (1);
+    private Reactive<int> _count = new (1);
     public override string Render()
     {
         string handleButtonClick = 
             $"""
-            {Document.GetElementById("counter-btn").InnerHTML()} = 'Clicked '+ {count}++ +' times!';
+            {Document.GetElementById("counter-btn").InnerHTML()} = 'Clicked '+ {_count}++ +' times!';
             """;
         return $"""
                 <div id="counter-btn" class="flex items-center justify-center" >Clicked 0 times!</div>

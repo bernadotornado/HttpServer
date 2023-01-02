@@ -1,14 +1,11 @@
-﻿using System;
-using System.IO;
-
-namespace JSXCore;
+﻿namespace JSXCore;
 
 public enum ImageFormat
 {
-    JPEG,
-    PNG,
-    SVG,
-    FAVICON
+    Jpeg,
+    Png,
+    Svg,
+    Favicon
 }
 public class Image
 {
@@ -19,17 +16,18 @@ public class Image
     {
         _dataHeader += "data:image/" + format switch
         {
-            ImageFormat.JPEG => "jpeg;base64,",
-            ImageFormat.PNG => "png;base64,",
-            ImageFormat.FAVICON => "x-icon;base64,",
-            ImageFormat.SVG => ""
+            ImageFormat.Jpeg => "jpeg;base64,",
+            ImageFormat.Png => "png;base64,",
+            ImageFormat.Favicon => "x-icon;base64,",
+            ImageFormat.Svg => "",
+            _ => ""
         };
         _path = path;
         _format = format;
     }
 
     public override string ToString()
-    => _format == ImageFormat.SVG? 
+    => _format == ImageFormat.Svg? 
         File.ReadAllText(_path) :
         _dataHeader + Convert.ToBase64String(File.ReadAllBytes(_path));
 }
