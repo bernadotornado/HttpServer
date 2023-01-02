@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Net;
-using JSXCore.client;
+using app.client;
 
-namespace JSXCore.server
+namespace app.server
 {
     class Server
     {

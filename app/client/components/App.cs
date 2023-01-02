@@ -1,6 +1,6 @@
 ﻿using JSXCore.lib;
 
-namespace JSXCore.client.components
+namespace app.client.components
 {
     class App : Component
     {

@@ -1,9 +1,9 @@
 ﻿using System.IO;
-using JSXCore.client.components;
+using app.client.components;
+using app.server;
 using JSXCore.lib;
-using JSXCore.server;
 
-namespace JSXCore.client;
+namespace app.client;
 
 public class Root: Component
 {

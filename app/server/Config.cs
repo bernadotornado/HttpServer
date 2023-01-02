@@ -1,4 +1,4 @@
-﻿namespace JSXCore.server;
+﻿namespace app.server;
 
 public static class Config
 {

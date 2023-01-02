@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
+using app.server;
 using JSXCore.lib;
-using JSXCore.server;
 
-namespace JSXCore.client.components;
+namespace app.client.components;
 
 public class Footer: Component
 {

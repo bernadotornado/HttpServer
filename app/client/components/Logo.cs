@@ -1,7 +1,7 @@
-﻿using JSXCore.lib;
-using JSXCore.server;
+﻿using app.server;
+using JSXCore.lib;
 
-namespace JSXCore.client.components;
+namespace app.client.components;
 
 public class Logo : Component
 {
