@@ -10,9 +10,4 @@
 	  <LangVersion>11</LangVersion>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="client\assets\favicon" />
-    <Folder Include="client\style\" />
-  </ItemGroup>
-
 </Project>

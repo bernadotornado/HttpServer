@@ -20,7 +20,7 @@ public class Footer: Component
     foreach (var logo in logos)
       content += $"""
                   <a href="{logo.Value}" class="mr-6 text-gray-600">
-                    {new Image(Image.ImageFormat.SVG, 
+                    {new Image(ImageFormat.SVG, 
                       Config.ClientDirectory+"assets/images/social-networks/"+logo.Key+".svg")}
                   </a>                      
                   """ ;

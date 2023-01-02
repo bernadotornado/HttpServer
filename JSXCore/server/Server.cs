@@ -10,7 +10,7 @@ namespace JSXCore.server
         static void Main(string[] args)
         {
             HttpListener listener = new HttpListener();
-            listener.Prefixes.Add(Config.HtmlURL);
+            listener.Prefixes.Add(Config.HostUrl);
             listener.Start();
             Console.WriteLine("Listening for requests...");
             

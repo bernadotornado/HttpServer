@@ -5,28 +5,21 @@ namespace JSXCore.lib;
 
 public class Reactive<T>
 {
-    public BigInteger id;
-    public static List<Reactive<T>> ReactiveVariables = new();
-    private T _value;
-    public T Value
-    {
-        get => _value;
-        set => _value = value;
-    }
+    private BigInteger _id;
+    private static List<Reactive<T>> _reactiveVariables = new();
+    public T Value { get; set; }
 
-    private string jsName;
-    
+    private string _jsName;
+    public override string ToString() => _jsName;
     public Reactive(T value)
     {
         Value = value;
-        id = ReactiveVariables.Count;
-        ReactiveVariables.Add(this);
-        jsName = $"_reactive{id}";
-        Component.jsCache += $"let {jsName} = {value};";
+        _id = _reactiveVariables.Count;
+        _reactiveVariables.Add(this);
+        _jsName = $"_reactive{_id}";
+        Component.JsCache += $"let {_jsName} = {value};";
     }
 
-    public override string ToString()
-    {
-        return jsName;
-    }
+    
+    
 }

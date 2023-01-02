@@ -2,17 +2,17 @@
 
 namespace JSXCore.lib;
 
-public class JSImport: Component
+public class JsImport: Component
 {
-    private string path = null;
-    public JSImport(string path = null) => this.path = path;
+    private string _path = null;
+    public JsImport(string path = null) => _path = path;
         
     public override string Render()  =>
         $"""
          <script lang="javascript">
-             { (path != null ? 
-                 File.ReadAllText(path) :
-                 jsCache)}
+             { (_path != null ? 
+                 File.ReadAllText(_path) :
+                 JsCache)}
          </script>
          """ ;
         

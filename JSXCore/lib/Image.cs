@@ -3,32 +3,35 @@ using System.IO;
 
 namespace JSXCore.lib;
 
+public enum ImageFormat
+{
+    JPEG,
+    PNG,
+    SVG,
+    FAVICON
+}
 public class Image
 {
+    
+    
     private ImageFormat _format;
-    public enum ImageFormat
-    {
-        JPEG,
-        PNG,
-        SVG,
-        FAVICON
-    }
     private string _path;
-    private string dataHeader = "";
+    private string _dataHeader = "";
     public Image(ImageFormat format,  string path)
     {
-        switch (format)
+        _dataHeader += "data:image/" + format switch
         {
-            case ImageFormat.JPEG: dataHeader += "data:image/jpeg;base64,"; break;
-            case ImageFormat.PNG: dataHeader += "data:image/png;base64,"; break;
-            case ImageFormat.FAVICON: dataHeader += "data:image/x-icon;base64,"; break;
-        }
-        this._path = path;
-        this._format = format;
+            ImageFormat.JPEG => "jpeg;base64,",
+            ImageFormat.PNG => "png;base64,",
+            ImageFormat.FAVICON => "x-icon;base64,",
+            ImageFormat.SVG => ""
+        };
+        _path = path;
+        _format = format;
     }
 
     public override string ToString()
     => _format == ImageFormat.SVG? 
         File.ReadAllText(_path) :
-        dataHeader + Convert.ToBase64String(File.ReadAllBytes(_path));
+        _dataHeader + Convert.ToBase64String(File.ReadAllBytes(_path));
 }
