@@ -4,7 +4,7 @@ using app.client;
 
 namespace app.server
 {
-    class Server
+    static class Server
     {
         // public static string resp;
         static void Main(string[] args)

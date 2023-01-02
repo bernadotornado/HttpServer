@@ -1,5 +1,5 @@
 ﻿using System;
-using JSXCore.lib;
+using JSXCore;
 
 namespace app.client.components;
 

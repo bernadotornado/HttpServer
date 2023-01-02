@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\bszha\\source\\repos\\HttpServer\\JSXCoreFramework\\JSXCoreFramework.csproj": {
-                "projectPath": "C:\\Users\\bszha\\source\\repos\\HttpServer\\JSXCoreFramework\\JSXCoreFramework.csproj"
+              "C:\\Users\\bszha\\source\\repos\\HttpServer\\JSXCore\\JSXCore.csproj": {
+                "projectPath": "C:\\Users\\bszha\\source\\repos\\HttpServer\\JSXCore\\JSXCore.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\bszha\\source\\repos\\HttpServer\\JSXCoreFramework\\JSXCoreFramework.csproj": {
+    "C:\\Users\\bszha\\source\\repos\\HttpServer\\JSXCore\\JSXCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bszha\\source\\repos\\HttpServer\\JSXCoreFramework\\JSXCoreFramework.csproj",
-        "projectName": "JSXCoreFramework",
-        "projectPath": "C:\\Users\\bszha\\source\\repos\\HttpServer\\JSXCoreFramework\\JSXCoreFramework.csproj",
+        "projectUniqueName": "C:\\Users\\bszha\\source\\repos\\HttpServer\\JSXCore\\JSXCore.csproj",
+        "projectName": "JSXCore",
+        "projectPath": "C:\\Users\\bszha\\source\\repos\\HttpServer\\JSXCore\\JSXCore.csproj",
         "packagesPath": "C:\\Users\\bszha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bszha\\source\\repos\\HttpServer\\JSXCoreFramework\\obj\\",
+        "outputPath": "C:\\Users\\bszha\\source\\repos\\HttpServer\\JSXCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bszha\\AppData\\Roaming\\NuGet\\NuGet.Config",

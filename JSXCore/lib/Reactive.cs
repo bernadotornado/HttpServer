@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Numerics;
 
-namespace JSXCore.lib;
+namespace JSXCore;
 
 public class Reactive<T>
 {

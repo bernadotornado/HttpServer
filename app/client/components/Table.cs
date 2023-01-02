@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using JSXCore.lib;
+using JSXCore;
 
 namespace app.client.components;
 

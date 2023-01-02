@@ -1,4 +1,4 @@
-﻿namespace JSXCore.lib;
+﻿namespace JSXCore;
 
 public static class Document
 {

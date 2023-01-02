@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace JSXCore.lib;
+namespace JSXCore;
 
 public class JsImport: Component
 {

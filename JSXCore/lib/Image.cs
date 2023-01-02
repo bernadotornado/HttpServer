@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace JSXCore.lib;
+namespace JSXCore;
 
 public enum ImageFormat
 {
@@ -12,8 +12,6 @@ public enum ImageFormat
 }
 public class Image
 {
-    
-    
     private ImageFormat _format;
     private string _path;
     private string _dataHeader = "";

@@ -1,13 +1,13 @@
 ﻿using System.IO;
 using app.client.components;
 using app.server;
-using JSXCore.lib;
+using JSXCore;
 
 namespace app.client;
 
 public class Root: Component
 {
-    private string _customStyle = File.ReadAllText(Config.ClientDirectory+"assets/style/style.css");
+    private string _customStyle = File.ReadAllText(Config.ClientDirectory + "assets/style/style.css");
     private string _tailwind = 
         """ 
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">

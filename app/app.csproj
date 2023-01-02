@@ -11,7 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../JSXCoreFramework/JSXCoreFramework.csproj" />
+    <ProjectReference Include="..\JSXCore\JSXCore.csproj" />
   </ItemGroup>
 
 </Project>
