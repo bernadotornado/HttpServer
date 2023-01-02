@@ -9,9 +9,10 @@ public class Button : Component
     
     public override string Render()
     {
-        string handleButtonClick = $"""
-                                {Document.GetElementById("counter-btn").InnerHTML()} = 'Clicked '+ {count}++ +' times!';
-                                """;
+        string handleButtonClick = 
+            $"""
+            {Document.GetElementById("counter-btn").InnerHTML()} = 'Clicked '+ {count}++ +' times!';
+            """;
         return $"""
                 <div id="counter-btn" class="flex items-center justify-center" >Clicked 0 times!</div>
                 <div class="flex space-x-2 justify-center">
