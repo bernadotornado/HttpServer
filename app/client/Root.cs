@@ -25,6 +25,7 @@ public class Root: Component
             <body class="bg-gray-800 text-gray-200">
                 {new App()}
                 {new JsImport()}
+                {new JsImport(Config.ClientDirectory + "assets/scripts/post.js")}
             </body>
         </html>
         """;

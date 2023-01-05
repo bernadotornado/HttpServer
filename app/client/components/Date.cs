@@ -11,5 +11,4 @@ public class Date : Component
             The Current Date is: {DateTime.Now}
         </h4>
         """;
-    
 }

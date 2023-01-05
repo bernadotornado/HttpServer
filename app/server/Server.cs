@@ -1,6 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Net;
+using System.Net.Http;
+using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using app.client;
+using app.server.requests;
 
 namespace app.server;
 
@@ -15,16 +22,14 @@ static class Server
         
         while (true)
         {
-            HttpListenerResponse response = listener.GetContext().Response;
-
-            string responseString = new Root().Render();
+            var context = listener.GetContext();
+            var request = context.Request;
             
-            byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
-            response.ContentLength64 = buffer.Length;
-
-            System.IO.Stream output = response.OutputStream;
-            output.Write(buffer, 0, buffer.Length);
-            output.Close();
+            switch (request.HttpMethod)
+            {
+                case "POST" : new POST().Handle(request); break;
+                case "GET" : new GET().Handle(context); break;
+            }
         }
     }
 }
