@@ -6,4 +6,14 @@ xhr.open("POST", url, true);
 //Send the proper header information along with the request
 xhr.setRequestHeader("Content-type", "application/json");
 
-xhr.send(JSON.stringify({name: "John", age: 18}));
+var x = 0;
+var b = "Hello";
+var _1 = true;
+var element = document.getElementById("counter-btn");
+
+var elementProps = {
+    innerHTML : element.innerHTML,
+    innerText : element.innerText,
+}
+
+xhr.send(JSON.stringify(elementProps));
